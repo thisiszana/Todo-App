@@ -13,9 +13,9 @@
     <div class="container">
         <h3 class="title">Todo App</h3>
         <div class="inputs">
-            <input type="text" placeholder="Add todo ...">
-            <input type="date">
-            <button>Add</button>
+            <input type="text" placeholder="Add todo ..." id="task-input">
+            <input type="date" id="date-input">
+            <button id="add-btn">Add</button>
         </div>
         <div class="buttons">
             <div class="left-btn">
@@ -26,6 +26,8 @@
             <button id="delete-all">Delete All</button>
         </div>
     </div>
+
+    <div class="alert-message"></div>
 
     <div class="table">
         <table>
@@ -40,6 +42,8 @@
             <tbody></tbody>
         </table>
     </div>
+
+    <script src="/JS/app.js"></script>
 
 </body>
 
