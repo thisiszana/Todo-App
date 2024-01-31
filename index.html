@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="title">Todo App</h3>
+        <div class="inputs">
+            <input type="text" placeholder="Add todo ...">
+            <input type="date">
+            <button>Add</button>
+        </div>
+        <div class="buttons">
+            <div class="left-btn">
+                <button class="filter-todo">Add</button>
+                <button class="filter-todo">Pending</button>
+                <button class="filter-todo">Completed</button>
+            </div>
+            <button id="delete-all">Delete All</button>
+        </div>
+    </div>
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

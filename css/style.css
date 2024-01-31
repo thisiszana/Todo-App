@@ -1,0 +1,133 @@
+:root {
+    --color-primary: #a3035e;
+    --color-background: #e6e6e6;
+    --color-task: #f7f7f7;
+    --color-success: #36d39a;
+    --color-warning: #fbbe23;
+    --color-error: #f87171;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    margin: 40px auto 30px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.inputs input {
+    all: unset;
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all .3s ease;
+}
+
+.inputs input:focus {
+    outline: none;
+    border-width: 2px;
+}
+
+.container .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    all: unset;
+    background-color: var(--color-primary);
+    color: var(--color-task);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all .3s ease-in;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+#delete-all {
+    background-color: var(--color-error);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: var(--color-background);
+}
+
+thead th {
+    padding: 10px;
+}
+
+thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tbody td {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: var(--color-task);
+    width: 25%;
+}
+
+tbody td button {
+    padding: 4px 8px;
+    margin: 2px 5px;
+}
+
+tbody td button:nth-child(1) {
+    background-color: var(--color-warning);
+}
+
+tbody td button:nth-child(2) {
+    background-color: var(--color-success);
+    width: 48px;
+}
+
+tbody td button:nth-child(3) {
+    background-color: var(--color-error);
+}
