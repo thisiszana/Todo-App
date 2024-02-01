@@ -85,6 +85,10 @@ button:hover {
     background-color: var(--color-error);
 }
 
+#edit-btn {
+    display: none;
+}
+
 /* Table Styles */
 table {
     width: 100%;

@@ -16,12 +16,13 @@
             <input type="text" placeholder="Add todo ..." id="task-input">
             <input type="date" id="date-input">
             <button id="add-btn">Add</button>
+            <button id="edit-btn">Edit</button>
         </div>
         <div class="buttons">
             <div class="left-btn">
-                <button class="filter-todo">Add</button>
-                <button class="filter-todo">Pending</button>
-                <button class="filter-todo">Completed</button>
+                <button class="filter-todo" data-filter="all">All</button>
+                <button class="filter-todo" data-filter="pending">Pending</button>
+                <button class="filter-todo" data-filter="completed">Completed</button>
             </div>
             <button id="delete-all">Delete All</button>
         </div>
